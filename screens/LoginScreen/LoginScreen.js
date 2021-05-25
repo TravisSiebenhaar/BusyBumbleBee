@@ -1,14 +1,9 @@
 import React from "react";
-import { Text, View } from "react-native";
+import { Text } from "react-native";
 import styles from "./LoginScreenStyles";
 
 const LoginScreen = () => {
-  return (
-    <View style={styles.container}>
-      <Text>This is the login screen</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+  return <Text>This is the login screen</Text>;
 };
 
 export default LoginScreen;
