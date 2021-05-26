@@ -5,8 +5,8 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import { Provider } from "react-redux";
 import store from "./store";
-import LoginScreen from "./screens/LoginScreen/LoginScreen";
-import RegisterScreen from "./screens/RegisterScreen/RegisterScreen";
+import LoginScreen from "./screens/Login/LoginScreen";
+import RegisterScreen from "./screens/Register/RegisterScreen";
 
 const Stack = createStackNavigator();
 
