@@ -2,7 +2,7 @@ import React from "react";
 import { StyleSheet, View, ActivityIndicator, Text } from "react-native";
 import { Image, Button } from "react-native-elements";
 
-const AppInitializer = () => {
+const AppInitializer = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <View style={styles.logoContainer}>
@@ -13,7 +13,12 @@ const AppInitializer = () => {
         />
       </View>
       <View style={styles.actionContainer}>
-        <Button title="Get Started" titleStyle={styles.fontSize} raised />
+        <Button
+          title="Get Started"
+          titleStyle={styles.fontSize}
+          raised
+          onPress={() => navigation.navigate("OnBoarding")}
+        />
         <View style={styles.signInContainer}>
           <Text style={styles.fontSize}>Already a member?</Text>
           <Button title="Sign In" type="clear" titleStyle={styles.fontSize} />

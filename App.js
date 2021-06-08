@@ -5,6 +5,8 @@ import { createStackNavigator } from "@react-navigation/stack";
 import { Provider } from "react-redux";
 import store from "./store";
 import AppInitializerScreen from "./screens/AppInitializer";
+import HomeScreen from "./screens/Home";
+import OnBoardingScreen from "./screens/OnBoarding/OnBoarding";
 
 const Stack = createStackNavigator();
 const isSignedIn = false;
@@ -15,7 +17,7 @@ export default function App() {
       <NavigationContainer>
         <Stack.Navigator>
           {isSignedIn ? (
-            console.log("Signed in")
+            <Stack.Screen name="Home" component={HomeScreen} />
           ) : (
             // Home app for use.
             <Stack.Screen
@@ -24,6 +26,7 @@ export default function App() {
               options={{ headerShown: false }}
             />
           )}
+          <Stack.Screen name="OnBoarding" component={OnBoardingScreen} />
         </Stack.Navigator>
       </NavigationContainer>
     </Provider>
