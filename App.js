@@ -26,7 +26,17 @@ export default function App() {
               options={{ headerShown: false }}
             />
           )}
-          <Stack.Screen name="OnBoarding" component={OnBoardingScreen} />
+          <Stack.Screen
+            name="OnBoarding"
+            component={OnBoardingScreen}
+            options={{
+              headerBackTitle: "Back",
+              headerTitle: false,
+              headerStyle: {
+                shadowOpacity: 0,
+              },
+            }}
+          />
         </Stack.Navigator>
       </NavigationContainer>
     </Provider>

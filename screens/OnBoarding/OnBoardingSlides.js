@@ -1,6 +1,10 @@
 export default [
-  { text: "slide_1", key: 1 },
-  { text: "slide_2", key: 2 },
-  { text: "slide_3", key: 3 },
-  { text: "slide_4", key: 4 },
+  {
+    text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+    id: 1,
+    imageUrl: "",
+  },
+  { text: "Aliquam tincidunt mauris eu risus.", id: 2, imageUrl: "" },
+  { text: "Vestibulum auctor dapibus neque.", id: 3, imageUrl: "" },
+  { text: "Vivamus vestibulum ntulla nec ante.", id: 4, imageUrl: "" },
 ];
